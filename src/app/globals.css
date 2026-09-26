@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-zinc-950 font-sans text-zinc-100;
+}
+
+.markdown {
+  @apply leading-relaxed;
+}
+.markdown > * + * {
+  @apply mt-3;
+}
+.markdown h1 {
+  @apply text-xl font-semibold;
+}
+.markdown h2 {
+  @apply text-lg font-semibold;
+}
+.markdown h3 {
+  @apply font-semibold;
+}
+.markdown ul {
+  @apply list-disc pl-5;
+}
+.markdown ol {
+  @apply list-decimal pl-5;
+}
+.markdown li + li {
+  @apply mt-1;
+}
+.markdown a {
+  @apply text-blue-400 underline;
+}
+.markdown code {
+  @apply rounded bg-zinc-800 px-1 py-0.5 font-mono text-[0.85em];
+}
+.markdown pre {
+  @apply overflow-x-auto rounded-lg bg-zinc-900 p-3;
+}
+.markdown pre code {
+  @apply bg-transparent p-0;
+}
+.markdown blockquote {
+  @apply border-l-2 border-zinc-700 pl-3 text-zinc-400;
+}
+.markdown table {
+  @apply block overflow-x-auto border-collapse text-xs;
+}
+.markdown th,
+.markdown td {
+  @apply border border-zinc-700 px-2 py-1 text-left;
+}
+.markdown hr {
+  @apply border-zinc-800;
+}
