@@ -1,8 +1,8 @@
 // NVIDIA-hosted models (build.nvidia.com). The API route only accepts IDs from this list.
 export const MODELS = [
-  { id: "meta/llama-3.3-70b-instruct", label: "Llama 3.3 70B" },
-  { id: "nvidia/llama-3.3-nemotron-super-49b-v1", label: "Nemotron Super 49B" },
-  { id: "mistralai/mixtral-8x22b-instruct-v0.1", label: "Mixtral 8x22B" },
+  { id: "google/gemma-4-31b-it", label: "Gemma 4 31B" },
+  { id: "nvidia/nemotron-3.5-lightning-30b-a3b", label: "Nemotron 3.5 Lightning" },
+  { id: "openai/gpt-oss-20b", label: "GPT-OSS 20B" },
 ] as const;
 
 export type ModelId = (typeof MODELS)[number]["id"];
