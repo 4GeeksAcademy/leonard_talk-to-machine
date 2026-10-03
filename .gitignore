@@ -12,6 +12,12 @@
 
 # testing
 /coverage
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# python
+.venv/
 
 # next.js
 /.next/
